@@ -16,11 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+
+            <!--支持由浏览器跳转-->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="sx" android:host="sx.kedacom.com" />
+                <category android:name="android.intent.category.DEFAULT" /><!--　对于隐式intent此项始终必要　-->
+                <category android:name="android.intent.category.BROWSABLE" /><!-- 由点击浏览器链接生成的intent包含此类型，支持由浏览器跳转过来的app须包含此类型过滤器  -->
+                <data android:scheme="sx" android:host="sx.kedacom.com" /> <!--决定了接受的具体链接内容-->
             </intent-filter>
         </activity>
     </application>
