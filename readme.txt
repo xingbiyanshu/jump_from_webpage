@@ -1,0 +1,1 @@
+在手机上用浏览器打开jump2sky.html，点击链接“jump to sky”，此时应跳转到app主界面。
